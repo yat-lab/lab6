@@ -1,3 +1,4 @@
+# Yat Yeung
 def encode(pswd):
     encoded_pswd = ""
     for i in range(len(pswd)):
