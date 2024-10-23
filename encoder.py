@@ -7,6 +7,7 @@ def encode(pswd):
         else:
             encoded_pswd+= str(int(pswd[i])+3)
     return encoded_pswd
+# done by brenden
 def decode (pswd):
     decoded_pswd = ""
     for i in range(len(pswd)):
