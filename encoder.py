@@ -8,7 +8,14 @@ def encode(pswd):
             encoded_pswd+= str(int(pswd[i])+3)
     return encoded_pswd
 def decode (pswd):
-    pass
+    decoded_pswd = ""
+    for i in range(len(pswd)):
+        if (int (pswd[i]) < 3):
+            decoded_pswd += str(int(pswd[i]) - 3 +10)
+        else:
+            decoded_pswd += str(int(pswd[i]) - 3)
+    return decoded_pswd
+
 
 def main():
     encoded_pswd=""
